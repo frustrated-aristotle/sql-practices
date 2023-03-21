@@ -1,0 +1,12 @@
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\bin\Debug\store-app-with-sql.exe.config
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\bin\Debug\store-app-with-sql.exe
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\bin\Debug\store-app-with-sql.pdb
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.csproj.AssemblyReference.cache
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.csproj.SuggestedBindingRedirects.cache
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store_app_with_sql.Form1.resources
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store_app_with_sql.Properties.Resources.resources
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.csproj.GenerateResource.cache
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.csproj.CoreCompileInputs.cache
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.exe
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store-app-with-sql.pdb
+C:\Users\aristo\Desktop\.net\sql-practices\store-app-with-sql\obj\Debug\store_app_with_sql.FormProduct.resources
