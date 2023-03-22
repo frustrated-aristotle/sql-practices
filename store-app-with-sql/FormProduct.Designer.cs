@@ -30,24 +30,24 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox_categoryName = new System.Windows.Forms.TextBox();
+            this.textBox_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox_purchaseCost = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_saleCost = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_stock = new System.Windows.Forms.NumericUpDown();
             this.button_list = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.comboBox_category = new System.Windows.Forms.ComboBox();
+            this.button_save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_stock)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,15 +67,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(521, 426);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // textBox_categoryName
+            // textBox_id
             // 
-            this.textBox_categoryName.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox_categoryName.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.textBox_categoryName.Location = new System.Drawing.Point(705, 13);
-            this.textBox_categoryName.Name = "textBox_categoryName";
-            this.textBox_categoryName.Size = new System.Drawing.Size(272, 32);
-            this.textBox_categoryName.TabIndex = 4;
+            this.textBox_id.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox_id.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.textBox_id.Location = new System.Drawing.Point(705, 13);
+            this.textBox_id.Name = "textBox_id";
+            this.textBox_id.Size = new System.Drawing.Size(272, 32);
+            this.textBox_id.TabIndex = 4;
             // 
             // label1
             // 
@@ -87,14 +88,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "ID:";
             // 
-            // textBox1
+            // textBox_name
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.textBox1.Location = new System.Drawing.Point(705, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 32);
-            this.textBox1.TabIndex = 6;
+            this.textBox_name.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox_name.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.textBox_name.Location = new System.Drawing.Point(705, 51);
+            this.textBox_name.Name = "textBox_name";
+            this.textBox_name.Size = new System.Drawing.Size(272, 32);
+            this.textBox_name.TabIndex = 6;
             // 
             // label2
             // 
@@ -117,14 +118,14 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Stock:";
             // 
-            // textBox3
+            // textBox_purchaseCost
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.textBox3.Location = new System.Drawing.Point(705, 127);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(272, 32);
-            this.textBox3.TabIndex = 10;
+            this.textBox_purchaseCost.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox_purchaseCost.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.textBox_purchaseCost.Location = new System.Drawing.Point(705, 127);
+            this.textBox_purchaseCost.Name = "textBox_purchaseCost";
+            this.textBox_purchaseCost.Size = new System.Drawing.Size(272, 32);
+            this.textBox_purchaseCost.TabIndex = 10;
             // 
             // label4
             // 
@@ -137,14 +138,14 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Purchase Cost:";
             // 
-            // textBox4
+            // textBox_saleCost
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox4.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.textBox4.Location = new System.Drawing.Point(705, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(272, 32);
-            this.textBox4.TabIndex = 12;
+            this.textBox_saleCost.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox_saleCost.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.textBox_saleCost.Location = new System.Drawing.Point(705, 165);
+            this.textBox_saleCost.Name = "textBox_saleCost";
+            this.textBox_saleCost.Size = new System.Drawing.Size(272, 32);
+            this.textBox_saleCost.TabIndex = 12;
             // 
             // label5
             // 
@@ -157,15 +158,6 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Sale Cost:";
             // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox5.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.textBox5.Location = new System.Drawing.Point(705, 203);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(272, 32);
-            this.textBox5.TabIndex = 14;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -177,13 +169,13 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Category:";
             // 
-            // numericUpDown1
+            // numericUpDown_stock
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.numericUpDown1.Location = new System.Drawing.Point(705, 90);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(272, 32);
-            this.numericUpDown1.TabIndex = 15;
+            this.numericUpDown_stock.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.numericUpDown_stock.Location = new System.Drawing.Point(705, 90);
+            this.numericUpDown_stock.Name = "numericUpDown_stock";
+            this.numericUpDown_stock.Size = new System.Drawing.Size(272, 32);
+            this.numericUpDown_stock.TabIndex = 15;
             // 
             // button_list
             // 
@@ -197,38 +189,51 @@
             this.button_list.UseVisualStyleBackColor = false;
             this.button_list.Click += new System.EventHandler(this.button_list_Click);
             // 
-            // button1
+            // button_update
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.button1.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.button1.Location = new System.Drawing.Point(705, 294);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 35);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_update.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button_update.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.button_update.Location = new System.Drawing.Point(705, 377);
+            this.button_update.Name = "button_update";
+            this.button_update.Size = new System.Drawing.Size(272, 35);
+            this.button_update.TabIndex = 19;
+            this.button_update.Text = "UPDATE";
+            this.button_update.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button_delete
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.button2.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.button2.Location = new System.Drawing.Point(705, 377);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 35);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_delete.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button_delete.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.button_delete.Location = new System.Drawing.Point(705, 336);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(272, 35);
+            this.button_delete.TabIndex = 18;
+            this.button_delete.Text = "DELETE";
+            this.button_delete.UseVisualStyleBackColor = false;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
-            // button3
+            // comboBox_category
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.button3.Font = new System.Drawing.Font("Roboto Mono", 14F);
-            this.button3.Location = new System.Drawing.Point(705, 336);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(272, 35);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.comboBox_category.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.comboBox_category.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.comboBox_category.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.comboBox_category.FormattingEnabled = true;
+            this.comboBox_category.Location = new System.Drawing.Point(705, 203);
+            this.comboBox_category.Name = "comboBox_category";
+            this.comboBox_category.Size = new System.Drawing.Size(272, 33);
+            this.comboBox_category.TabIndex = 20;
+            // 
+            // button_save
+            // 
+            this.button_save.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.button_save.Font = new System.Drawing.Font("Roboto Mono", 14F);
+            this.button_save.Location = new System.Drawing.Point(705, 294);
+            this.button_save.Name = "button_save";
+            this.button_save.Size = new System.Drawing.Size(272, 35);
+            this.button_save.TabIndex = 21;
+            this.button_save.Text = "SAVE";
+            this.button_save.UseVisualStyleBackColor = false;
+            this.button_save.Click += new System.EventHandler(this.button_save_Click);
             // 
             // FormProduct
             // 
@@ -236,27 +241,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(989, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_save);
+            this.Controls.Add(this.comboBox_category);
+            this.Controls.Add(this.button_update);
+            this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_list);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.numericUpDown_stock);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox_saleCost);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox_purchaseCost);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_name);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox_categoryName);
+            this.Controls.Add(this.textBox_id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormProduct";
             this.Text = "FormProduct";
+            this.Load += new System.EventHandler(this.FormProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_stock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,21 +271,21 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox_categoryName;
+        private System.Windows.Forms.TextBox textBox_id;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_purchaseCost;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_saleCost;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown_stock;
         private System.Windows.Forms.Button button_list;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_update;
+        private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.ComboBox comboBox_category;
+        private System.Windows.Forms.Button button_save;
     }
 }
